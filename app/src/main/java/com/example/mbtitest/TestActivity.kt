@@ -1,5 +1,6 @@
 package com.example.mbtitest
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -30,9 +31,9 @@ class TestActivity : AppCompatActivity() {
 
     fun moveToNextQuestion() {
         if (viewPager.currentItem == 3) {
-
-            // 마지막 페이지 -> 결과 화면으로 이동
-
+            val intent = Intent(this, ResultActivity::class.java)
+            intent.putIntegerArrayListExtra("results", ArrayList(questionNairResults.results))
+            startActivity(intent)
         } else {
             val nextItem = viewPager.currentItem + 1
             if (nextItem < viewPager.adapter?.itemCount ?: 0) {
