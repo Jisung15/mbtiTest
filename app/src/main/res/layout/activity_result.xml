@@ -13,50 +13,50 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
         android:text="당신의 BMI는?"
-        android:textStyle="bold"
         android:textColor="#009688"
         android:textSize="30sp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tvv_resValue"
+        android:id="@+id/tv_resValue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="ESTJ"
-        android:textStyle="bold"
         android:textColor="#0E1C6E"
         android:textSize="50sp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_resTitle"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_resTitle" />
 
     <ImageView
         android:id="@+id/iv_resImg"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:src="@drawable/ic_estj"
-        android:layout_marginBottom="10dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/ic_estj"
         app:layout_constraintBottom_toTopOf="@+id/btn_res_retry"
-        app:layout_constraintTop_toBottomOf="@id/tvv_resValue"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_resValue" />
 
     <Button
         android:id="@+id/btn_res_retry"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="26dp"
         android:text="다시 테스트"
+        android:textColor="@color/white"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:textColor="@color/white"
-        android:layout_margin="26dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

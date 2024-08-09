@@ -36,7 +36,7 @@ class ResultActivity : AppCompatActivity() {
             resultString += resultTypes[i][results[i]-1]
         }
 
-        val tv_resValue : TextView = findViewById(R.id.tvv_resValue)
+        val tv_resValue : TextView = findViewById(R.id.tv_resValue)
         tv_resValue.text = resultString
 
         val iv_resImg : ImageView = findViewById(R.id.iv_resImg)
